@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Perso</title>
+    <style>
+        header {
+            background: url(head.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 600px;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+
+            .img {
+                width: 200px;
+            }
+
+            .box {
+                height: 300px !important;
+            }
+
+            .btn-flat {
+                height: 24px;
+                line-height: 24px;
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="display: flex; min-height: 100vh; flex-direction: column; height: 2000px;">
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper grey darken-4">
+                    <a class="brand-logo"
+                        style="margin-left: 20px; display: block; text-overflow: ellipsis; white-space: nowrap; overflow: hidden">CV
+                        Enzo Delahousse</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#education">ÉDUCATION</a></li>
+                        <li><a href="#competences">COMPÉTENCES</a></li>
+                        <li><a href="#exp">EXPERIENCES PROFESSIONNELLES</a></li>
+                        <li><a href="#projet">PROJETS PERSONNELS</a></li>
+                        <li><a href="#loisir">LOISIRS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <a href="#user"><img class="circle" src="picc.jpg"></a>
+                    <span class="black-text name">Enzo Delahousse</span></a>
+                    <span class="black-text email">EnzoDlaH@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="#education">ÉDUCATION</a></li>
+            <li><a href="#competences">COMPÉTENCES</a></li>
+            <li><a href="#exp">EXPERIENCES PROFESSIONNELLES</a></li>
+            <li><a href="#projet">PROJETS PERSONNELS</a></li>
+            <li><a href="#loisir">LOISIRS</a></li>
+        </ul>
+        <div style="justify-content: center; align-items:center; display: flex; height: 400px;" class="box">
+            <img src="picc2.jpg" alt="PdP" class="img"
+                style="border-style: solid; border-width: 5px; border-color: rgb(63, 62, 62); border-radius: 90%;" />
+        </div>
+        <div style="display: flex; align-content:center; justify-content:center;">
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">Passionné</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">J'apprends vite</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">Patient</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">À l'écoute</a>
+            </div>
+        </div>
+        <div style="display: flex; align-content:center; justify-content:center;">
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">Carré</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">Organisé</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">Fiable</a>
+            </div>
+            <div>
+                <a class="waves-effect waves-teal btn-flat" style="color: white;">Discret</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main style="flex: 1 0 auto;">
+
+        <!-- Mes études -->
+
+        <section class="container section scrollspy" id="education">
+            <h5 style="margin-bottom: 50px">Éducation</h5>
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <i class="material-icons circle cyan accent-4">account_balance</i>
+                    <span class="title">Collège</span>
+                    <p>Henri Matisse, Linselles <br>
+                        2012 – 2016
+                    </p>
+                    <div class="right-align">
+                        <button data-target="modal1" class="btn modal-trigger cyan accent-4"><i
+                                class="material-icons">card_membership</i></button>
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <h4>Diplôme Reçu</h4>
+                            <p>Brevet Des Collèges Mention Bien</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle cyan accent-4">account_balance</i>
+                    <span class="title">Lycée</span>
+                    <p>EIC, Tourcoing <br>
+                        2016 – 2019
+                    </p>
+                    <div class="right-align">
+                        <button data-target="modal2" class="btn modal-trigger cyan accent-4"><i
+                                class="material-icons">card_membership</i></button>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <h4>Diplôme Reçu</h4>
+                            <p>Baccalauréat Général en Série Scientifique Spécialité Sciences de L'ingénieur mention
+                                Assez Bien </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="collection-item avatar">
+                    <i class="material-icons circle cyan accent-4">account_balance</i>
+                    <span class="title">Bachelor Informatique Expert </span>
+                    <p>EFFICOM Lille<br>
+                        2019 – 2022
+                    </p>
+                    <div class="right-align">
+                        <button data-target="modal3" class="btn modal-trigger cyan accent-4"><i
+                                class="material-icons">card_membership</i></button>
+                    </div>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <h4>Diplôme à Obtenir</h4>
+                            <p>Bachelor Informatique Expert en Cours</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Barre de Compétences -->
+
+        <section class="container section scrollspy" id="competences">
+            <h5>Mes Compétences</h5>
+            <div class="div col s8 offset-s2" style="margin-left: 16%; width: 60%; margin-top: 100px;">
+                <p>CSS</p>
+                <div class="progress cyan lighten-4" style="margin-bottom: 20px;">
+                    <div class="determinate cyan accent-4" style="width: 85%"></div>
+                </div>
+                <p>HTML</p>
+                <div class="progress cyan lighten-4" style="margin-bottom: 20px">
+                    <div class="determinate cyan accent-4" style="width: 85%"></div>
+                </div>
+                <p>C++</p>
+                <div class="progress cyan lighten-4" style="margin-bottom: 20px">
+                    <div class="determinate cyan accent-4" style="width: 20%"></div>
+                </div>
+                <p>PHP</p>
+                <div class="progress cyan lighten-4" style="margin-bottom: 20px">
+                    <div class="determinate cyan accent-4" style="width: 50%"></div>
+                </div>
+                <p>MySQL</p>
+                <div class="progress cyan lighten-4" style="margin-bottom: 60px">
+                    <div class="determinate cyan accent-4" style="width: 50%"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expériences pro dropdown -->
+        <section class="container section scrollspy" id="exp">
+            <h5 style="margin-bottom: 40px;">Mes Expériences Professionnelles</h5>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">library_books</i>2017</div>
+                    <div class="collapsible-body"><span style="display: flex; align-items: center;"> Une semaine de
+                            Projet « L’avenir des établissements scolaires »
+                            EIC &nbsp; <a href="https://goo.gl/maps/ZkwP3K1rB87PBxRC9"><i class="material-icons"
+                                    style="margin-top: 8px;">gps_fixed</i></a> &nbsp; <b>Tourcoing</b><br>
+
+                        </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">library_books</i>2016</div>
+                    <div class="collapsible-body"><span style="display: flex; align-items: center;"> Une semaine de
+                            Stage au sein d'un Service Informatique chez API
+                            RESTAURATION &nbsp; <a href="https://goo.gl/maps/1hhMgebo3WzJScdh7"><i
+                                    class="material-icons"
+                                    style="margin-top: 8px;">gps_fixed</i></a> &nbsp; <b>Mons-en-Barœul</b>
+
+                        </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">library_books</i>2015</div>
+                    <div class="collapsible-body"><span style="display: flex; align-items: center;"> Une semaine de
+                            Stage dans un Cabinet vétérinaire Clinique
+                            Vétérinaire du Barœul &nbsp; <a href="https://goo.gl/maps/gePtZfG7Cc1nU9fM8"><i
+                                    class="material-icons"
+                                    style="margin-top: 8px;">gps_fixed</i></a> &nbsp; <b>Mons-en-Barœul</b>
+
+                        </span></div>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Projet perso tabs -->
+
+        <section class="container section scrollspy" id="projet">
+            <h5 style="margin-bottom: 50px; margin-top: 50px;">Mes Projets Personnels</h5>
+            <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                <li class="tab"><a href="#test1">2016</a></li>
+                <li class="tab"><a href="#test2">2018 – 2020</a></li>
+                <li class="tab"><a href="#test4">2019</a></li>
+                <style>
+                    .tabs .tab a {
+                        color: rgba(37, 148, 182, 0.7);
+                        /*Custom Text Color*/
+                    }
+
+                    .tabs .tab a:hover {
+                        color: #1291b1;
+                        /*Custom Color On Hover*/
+                    }
+
+                    .tabs .tab a:focus.active {
+                        color: #1291b1;
+                        /*Custom Text Color While Active*/
+                        background-color: rgba(14, 137, 185, 0.2);
+                        /*Custom Background Color While Active*/
+                    }
+
+                    .tabs .indicator {
+                        background-color: #1291b1;
+                        /*Custom Color Of Indicator*/
+                    }
+                </style>
+            </ul>
+            <div id="test1" class="col s12">
+                <h6><b>Création d'un générateur de Mots de Passe</b></h6>
+                <p>À l'issue de mon stage de 2nd au lycée, j'ai réalisé un générateur de mot de
+                    passe complet en utilisant Windev22.</p>
+                <h6><b>Montage d'un PC</b></h6>
+                <p>Avec l'aide d'un ami, j'ai réalisé le montage de A à Z d'un Ordinateur Fixe
+                    (Carte Mère,Barres de RAM,Ventirad,Carte Graphique,Disque Dur et l'OS).</p>
+            </div>
+            <div id="test2" class="col s12">
+                <h6><b>Création de petits évènements sur plusieurs jeux en réseau.</b></h6>
+                <p>Avec une bande d'amis rencontré sur internet, je me suis mis en quêtes de
+                    réaliser des évènements sur certain jeux en réseau (avec ou sans prix), j'organise tout celà dans un
+                    serveur Discord.</p>
+            </div>
+            <div id="test4" class="col s12">
+                <h6><b>Organisation d’une rencontre de type “LAN” à but non lucratif</b></h6>
+                <p>J'ai organisé (avec le chef de mon clan) une rencontre entre les membres du clan pour réaliser une
+                    "LAN" lors
+                    des vacances d'été, je me suis occupé du côté administratif ainsi que de la communication entre les
+                    membres qui participaient, mais aussi d'une partie de la configuration IP pour chaque poste (la
+                    salle ne possédait pas de connection)</p>
+            </div>
+        </section>
+
+        <!-- Défilement loisirs -->
+
+        <section class="container section scrollspy" id="loisir" style="margin-top: 100px;">
+            <h5 style="margin-bottom: 50px;">Loisirs</h5>
+            <div class="carousel carousel-slider center" data-indicators="true">
+                <div class="carousel-item cyan accent-4 white-text" href="#one!" style="background: url(brawl.jpg);">
+                    <h2>Jeux Vidéo</h2>
+                </div>
+                <div class="carousel-item cyan accent-4 white-text" href="#two!" style="background: url(velo.jpg);">
+                    <h2>Vélo</h2>
+                </div>
+                <div class="carousel-item cyan accent-4 white-text" href="#three!"
+                    style="background: url(concert.jpg);">
+                    <h2>Concerts
+                    </h2>
+                </div>
+                <div class="carousel-item cyan accent-4 white-text" href="#four!" style="background: url(netflix.jpg);">
+                    <h2>Séries</h2>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Fun Fact</h5>
+                    <p class="grey-text text-lighten-4">Ce CV a entièrement été réalisé grâce à la blibliothèque CSS
+                        "Materialize"</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Liens Utiles</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/EnzoDla">Mon Twitter</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/in/enzo-delahousse-89719b195">Mon Linkedin</a></li>
+                        <li><a class="grey-text text-lighten-3" style="cursor: pointer"
+                                onclick="M.toast({html: 'ScriRax#8922'})">Mon Discord</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.efficom.fr/tech_school/">Mon École</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright CV
+
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#content').pushpin({
+                top: $('#content').offset().top
+            });
+        });
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+            $('.tabs').tabs();
+            $('.collapsible').collapsible();
+            $('.scrollspy').scrollSpy();
+        });
+        M.toast({
+            html: 'ScriRax#8922'
+        });
+        $(document).ready(function () {
+            $('.modal').modal();
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true
+            });
+        });
+    </script>
+</body>
+
+</html>
